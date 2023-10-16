@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.PieChart?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.foodpreferences.Controller" spacing="10">
+    <HBox spacing="10">
+        <Label text="Student Name:" />
+        <TextField fx:id="studentNameField" />
+        <Label text="Food Type:" />
+        <TextField fx:id="foodTypeField" />
+        <Button fx:id="addButton" text="Add" />
+        <Button fx:id="deleteButton" text="Delete" />
+    </HBox>
+    <TableView fx:id="tableView" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="studentColumn" text="Student Name" />
+            <TableColumn fx:id="foodColumn" text="Food Type" />
+        </columns>
+    </TableView>
+    <PieChart fx:id="foodPieChart" />
+</VBox>
